@@ -19,6 +19,7 @@ if (whatsappNumber) {
     document.getElementById("whatsapp").innerHTML = `Whatsapp. ${whatsapp}`;
     document.getElementById("whatsapp").href = `https://wa.me/${whatsapp.replace(/\s/g, '')}`;
 } else {
-    document.getElementById("whatsapp").remove();
-    // document.getElementById("whatsapp-br").remove();
+    // document.getElementById("whatsapp").remove();
+    document.getElementById("whatsapp").innerHTML = '';
+    document.getElementById("whatsapp").href = '';
 }
